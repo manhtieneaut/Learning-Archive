@@ -1,0 +1,90 @@
+/* Footer section */
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footerTop {
+  margin-top: 12rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navList {
+  width: 24rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navList-block {
+  display: inline-block;
+}
+
+.socialLink {
+  display: flex;
+  width: 12rem;
+  justify-content: space-between;
+}
+
+.socialLink a:link,
+.socialLink a:visited,
+.socialLink a:hover,
+.socialLink a:active {
+  font-size: 2rem;
+  color: var(--black-color);
+}
+
+.navList-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--black-color);
+  line-height: 1;
+  margin: 0;
+}
+
+.navList-followTitle {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.navList-followTitle::after {
+  content: "";
+  display: inline-block;
+  width: 5rem;
+  margin-left: 1rem;
+  border-top: 2px solid var(--text-color);
+  position: absolute;
+  top: 60%;
+}
+
+.navList-text {
+  font-family: 'Jost', sans-serif;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.navList-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navList-link a {
+  margin-top: 1.5rem;
+}
+
+.navList-link a,
+.navList-link a:link,
+.navList-link a:hover,
+.navList-link a:visited,
+.navList-link a:active {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  text-decoration: none;
+  text-transform: capitalize;
+}

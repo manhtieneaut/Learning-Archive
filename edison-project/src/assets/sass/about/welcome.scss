@@ -1,0 +1,43 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.welcome-section {
+    @include posRAlignHorizontal('center');
+    @include contentAlignFlex('center');
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+    .welcome-left {
+        width: 50%;
+
+        .about-discount {
+            width: 100%;
+            height: calc(width);
+        }
+    }
+
+    .welcome-right {
+        width: 50%;
+        margin-left: 5rem;
+
+        &-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.6rem;
+            color: $dVioletColor;
+        }
+
+        &-stext {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 1.77;
+            color: $dVioletColor;
+        }
+
+        &-text {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 1.77;
+            color: var(--text-color);
+        }
+    }
+}

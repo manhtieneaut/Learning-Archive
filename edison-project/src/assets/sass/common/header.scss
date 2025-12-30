@@ -1,0 +1,204 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.header {
+    width: 100%;
+    position: relative;
+
+    &-background {
+        position: relative;
+        width: 100%;
+        height: 95rem;
+        display: flex;
+        z-index: -1;
+
+        &-primary {
+            width: 50%;
+            background-color: $bgPriColor;
+        }
+
+        &-secondary {
+            width: 50%;
+            background-color: $bgSecColor;
+        }
+    }
+
+    &-top-section {
+        width: 100%;
+        position: absolute;
+        top: 10px;
+
+        .header-top-block {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .header-top-wrap {
+                display: flex;
+                justify-content: space-between;
+
+                .header-logo {
+                    width: 21rem;
+                    height: calc(width/3);
+
+                    .header-img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .navbar {
+                    width: 45rem;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .navItem {
+                        font-family: 'Playfair Display', serif;
+                        font-size: 2rem;
+                        color: var(--text-color);
+                        font-weight: 600;
+                        line-height: 4.9rem;
+                        text-decoration: none;
+
+                        a:link,
+                        a:active,
+                        a:hover,
+                        a:visited {
+                            color: inherit;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .header-top-form {
+                    width: 29.2rem;
+                    display: flex;
+                    justify-content: right;
+
+                    a {
+                        width: 3.2rem;
+                        height: 3.2rem;
+                        border: 1px solid $g_textColor;
+                        border-radius: 50%;
+                        position: relative;
+                        transform: translateY(50%);
+                        margin: 0 1rem;
+
+                        .header-signin-icon {
+                            font-size: 1.8rem;
+                            color: $g_textColor;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+
+                        .header-cart-icon {
+                            font-size: 1.8rem;
+                            color: $g_textColor;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -45%);
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-middle-section {
+            position: relative;
+
+            .header-slider {
+                @include containerPadding;
+                @include posRAlignHorizontal('center');
+                position: relative;
+                margin-top: 30rem;
+
+                .slider-left {
+                    font-size: 1.8rem;
+                    width: 50%;
+                    line-height: 1.25;
+
+                    p {
+                        margin: 3rem auto;
+                    }
+
+                    &-slogan {
+                        font-family: 'Jost', sans-serif;
+                        color: var(--text-color);
+                        font-weight: lighter;
+                        font-size: 1.8rem;
+                    }
+
+                    &-title {
+                        color: var(--black-color);
+                        font-family: "Playfair Display", serif;
+                        font-weight: bold;
+                        font-size: 6.4rem;
+                    }
+
+                    &-text {
+                        color: var(--text-color);
+                        font-size: 1.8rem;
+                        font-weight: lighter;
+                    }
+
+                    &-btn {
+                        background-color: var(--text-color);
+                        color: var(--white-color);
+                        font-size: 1.4rem;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        padding: 2rem 3rem;
+                    }
+
+                    &-btn:hover {
+                        background-color: var(--white-color);
+                        color: var(--text-color);
+                        cursor: pointer;
+                    }
+                }
+
+                .slider-right {
+                    width: 75%;
+                    height: 10rem;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+
+                    .advertise-aside-wrap {
+                        width: 80rem;
+                        height: calc(width/2);
+
+                        .advertise-aside {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                @media only screen and (max-width: 2560px) {
+                    .slider-right {
+                        width: 50%;
+                        height: 10rem;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        .advertise-aside-wrap {
+                            width: 80rem;
+                            height: calc(width/2);
+
+                            .advertise-aside {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

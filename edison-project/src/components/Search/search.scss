@@ -1,0 +1,46 @@
+@import '../../assets/sass/variables';
+@import '../../assets/sass/mixins';
+
+.search-section {
+    position: relative;
+
+    .search-block {
+        border-bottom: solid 1px var(--text-color);
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline;
+
+        .search-input,
+        .search-input:focus {
+            border: none;
+            margin-top: 1.6rem;
+            font-size: 1.6rem;
+        }
+
+        .search-input {
+            color: var(--text-color);
+        }
+
+        .search-input:focus {
+            outline: none;
+            color: var(--black-color);
+        }
+
+        .search-button {
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            padding: 0;
+            border: none;
+            background-image: url("../../assets/images/headerImages/headerSearchIcon.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            position: absolute;
+            right: 0;
+            bottom: 5px;
+            cursor: pointer;
+        }
+    }
+}

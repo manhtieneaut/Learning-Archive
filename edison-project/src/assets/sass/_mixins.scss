@@ -1,0 +1,92 @@
+// Mixin.
+@mixin bgc($bgc) {
+    background-color: $bgc;
+}
+
+@mixin cube($value) {
+    width: $value;
+    height: $value;
+}
+
+@mixin containerPadding() {
+    width: 117rem !important;
+}
+
+@mixin contentAlignFlex($dir: "left") {
+    display: flex;
+
+    @if $dir =="right" {
+        justify-content: right;
+    }
+
+    @else if $dir =="center" {
+        justify-content: center;
+    }
+}
+
+@mixin posRelativeAlign($dir) {
+    @if $dir =="center" {
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @else if $dir =="middle" {
+        position: relative;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    @else if $dir =="all" {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin posAbsoluteAlign($dir) {
+    @if $dir =="center" {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @else if $dir =="middle" {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    @else if $dir =="all" {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin posRAlignHorizontal($dir) {
+    @if $dir =="right" {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    @else if $dir =="center" {
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @else if $dir =="left" {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}

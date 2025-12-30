@@ -1,0 +1,30 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.funfact-section {
+    @include posRAlignHorizontal('center');
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+    .funfact-item {
+        text-align: center;
+
+        .funfact-title {
+            color: $dVioletColor;
+            font-size: 4.6rem;
+            font-family: 'Playfair Display', serif;
+            line-height: 1.25;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .funfact-text {
+            color: $dVioletColor;
+            font-family: 'Jost', sans-serif;
+            font-size: 1.8rem;
+            line-height: 2;
+            margin: 0;
+        }
+    }
+}

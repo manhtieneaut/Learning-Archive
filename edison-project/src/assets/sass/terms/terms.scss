@@ -1,0 +1,19 @@
+@import '../variables';
+@import '../_mixins.scss';
+
+.terms-section {
+    position: relative;
+
+    .terms-block {
+        @include containerPadding();
+        @include posRAlignHorizontal('center');
+
+        h2 {
+            font-size: 3.6rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}

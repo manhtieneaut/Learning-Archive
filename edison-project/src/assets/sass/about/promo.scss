@@ -1,0 +1,160 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.promo-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .promo-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        .promo-desc {
+            width: 80%;
+            margin-right: 0;
+            margin-left: auto;
+
+            .promo-left-title {
+                color: var(--black-color);
+                font-family: 'Playfair Display', sans-serif;
+                font-size: 4.6rem;
+                font-weight: 700;
+                line-height: 1.25;
+            }
+
+            .promo-left-desc {
+                font-family: 'Jost', sans-serif;
+                color: var(--text-color);
+                font-size: 18px;
+                line-height: 1.66;
+                max-width: 54.5rem;
+            }
+        }
+
+        .promo-items {
+            width: 80%;
+            margin-top: 2rem;
+            margin-right: 0;
+            margin-left: auto;
+            padding-right: 8rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+
+            .promo-item {
+                display: flex;
+
+                .promo-icon {
+                    @include cube(6rem);
+                }
+
+                &-text {
+                    margin-left: 1rem;
+
+                    .promo-item-title {
+                        font-family: 'Playfair Display', sans-serif;
+                        color: var(--black-color);
+                        font-size: 2.4rem;
+                        line-height: 1.25;
+                        font-weight: 700;
+                        margin-top: 0;
+                    }
+
+                    .promo-item-desc {
+                        font-family: 'Jost', sans-serif;
+                        color: var(--text-color);
+                        font-size: 1.6rem;
+                        line-height: 1.75;
+                        max-width: 23rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .promo-right {
+        width: 50%;
+        position: relative;
+
+        .promo-image {
+            .about-promo-image {
+                width: 100%;
+            }
+        }
+
+        .promo-content {
+            position: absolute;
+            width: 42.5rem;
+            height: 26.5rem;
+            padding: 0 5.5rem 0;
+            top: 0;
+            left: 0;
+
+            .promo-advertise {
+                font-family: 'Jost', sans-serif;
+                font-weight: 500;
+                font-size: 1.8rem;
+                color: $promoColor;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                line-height: 2;
+                margin: 3rem 0;
+
+                &-emphasis {
+                    font-weight: bold;
+                }
+            }
+
+
+
+            .promo-title {
+                margin: 3rem 0;
+                font-family: 'Playfair Display', sans-serif;
+                font-size: 4.6rem;
+                color: $promoColor;
+                white-space: nowrap;
+            }
+
+            .promo-text {
+                margin: 3rem 0;
+                font-family: 'Jost', sans-serif;
+                font-size: 1.6rem;
+                color: #c0bcbc;
+                line-height: 1.75;
+            }
+
+            .promo-btn {
+                padding: 1.5rem 2rem;
+                @include bgc($promoColor);
+                border: solid 1px $promoColor;
+                font-family: 'Jost', sans-serif;
+                font-size: 1.4rem;
+                font-weight: bold;
+                color: var(--text-color);
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+
+            @media only screen and (max-width: 2560px) {
+                .promo-advertise {
+                    font-size: 1.2rem;
+                    margin: 1rem 0;
+                }
+
+                .promo-title {
+                    font-size: 3.6rem;
+                    margin: 0;
+                }
+
+                .promo-text {
+                    font-size: 1.2rem;
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.newsletter-section {
+  width: 100%;
+  background-color: #223e3f;
+  height: 21.5rem;
+  position: relative;
+}
+
+.newsletter-section .newsletter-block {
+  width: 117rem !important;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.newsletter-section .newsletter-block .newsletter-wrap {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-section .newsletter-block .newsletter-wrap .newsletter-title {
+  width: 35rem;
+  line-height: 4rem;
+}
+
+.newsletter-section .newsletter-block .newsletter-wrap .newsletter-title p {
+  color: var(--white-color);
+  font-family: "Playfair Display", serif;
+  font-size: 4.6rem;
+  font-weight: bold;
+}
+
+.newsletter-section .newsletter-block .newsletter-wrap .newsletter-form-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-section .newsletter-block .newsletter-wrap .newsletter-form-wrap .newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-section .newsletter-block .newsletter-wrap .newsletter-form-wrap .newsletter-form .newsletter-input {
+  width: 42rem;
+  height: 6rem;
+  background-color: inherit;
+  border: solid var(--white-color) 1px;
+  font-size: 1.4rem;
+}
+
+.newsletter-section .newsletter-block .newsletter-wrap .newsletter-form-wrap .newsletter-form .newsletter-input:focus {
+  color: var(--white-color);
+  outline: none;
+}
+
+.newsletter-section .newsletter-block .newsletter-wrap .newsletter-form-wrap .newsletter-form .newsletter-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  width: 5.2rem;
+  height: 6rem;
+}
+
+.newsletter-section .newsletter-block .newsletter-wrap .newsletter-form-wrap .newsletter-form .newsletter-button:hover {
+  cursor: pointer;
+}
+
+.newsletter-section .newsletter-block .newsletter-wrap .newsletter-form-wrap .newsletter-form .newsletter-icon {
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=newsletter.css.map */

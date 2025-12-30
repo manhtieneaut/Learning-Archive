@@ -1,0 +1,30 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.advertise-section {
+    @include contentAlignFlex(center);
+
+    .advertise-block {
+        @include containerPadding();
+        text-align: center;
+
+        .flash-sale-text {
+            font-weight: normal;
+
+            .flash-sale-icon {
+                color: $g_textColor;
+                text-shadow: 1px 1px 20px $g_textColor;
+                margin-right: 0.5rem;
+            }
+
+            .flash-sale-stext {
+                font-weight: bold;
+            }
+        }
+
+        hr {
+            @include containerPadding();
+            opacity: 0.5;
+        }
+    }
+}

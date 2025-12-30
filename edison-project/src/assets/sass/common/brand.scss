@@ -1,0 +1,28 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.brand-block {
+    display: flex;
+    justify-content: center;
+
+    .brand-wrap {
+        @include containerPadding();
+        margin: 5rem 0;
+
+        .brand-items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .brand-item {
+                opacity: 0.5;
+                max-width: 9.5rem;
+
+                &-image {
+                    width: 100%;
+                    height: calc(width);
+                }
+            }
+        }
+    }
+}

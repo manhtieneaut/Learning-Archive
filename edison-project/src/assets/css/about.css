@@ -1,0 +1,182 @@
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .welcome-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.content .welcome-section .welcome-left {
+  width: 50%;
+}
+.content .welcome-section .welcome-left .aboutDiscount {
+  width: 100%;
+  height: 100%;
+}
+.content .welcome-section .welcome-right {
+  width: 50%;
+  margin-left: 5rem;
+}
+.content .welcome-section .welcome-right-title {
+  font-family: "Playfair Display", serif;
+  font-size: 4.6rem;
+}
+.content .welcome-section .welcome-right-stext {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.77;
+  color: #223e3f;
+}
+.content .welcome-section .welcome-right-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.77;
+  color: var(--text-color);
+}
+.content .funfact-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+.content .funfact-section .funfact-item {
+  text-align: center;
+}
+.content .funfact-section .funfact-item .funfact-title {
+  color: #223e3f;
+  font-size: 4.6rem;
+  font-family: "Playfair Display", serif;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 0;
+}
+.content .funfact-section .funfact-item .funfact-text {
+  color: #223e3f;
+  font-family: "Jost", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2;
+  margin: 0;
+}
+.content .promo-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.content .promo-section .promo-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.content .promo-section .promo-left .promo-desc {
+  width: 80%;
+  margin-right: 0;
+  margin-left: auto;
+}
+.content .promo-section .promo-left .promo-desc .promo-left-title {
+  color: var(--black-color);
+  font-family: "Playfair Display", sans-serif;
+  font-size: 4.6rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.content .promo-section .promo-left .promo-desc .promo-left-desc {
+  font-family: "Jost", sans-serif;
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1.66;
+  max-width: 54.5rem;
+}
+.content .promo-section .promo-left .promo-items {
+  width: 80%;
+  margin-top: 2rem;
+  margin-right: 0;
+  margin-left: auto;
+  padding-right: 8rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content .promo-section .promo-left .promo-items .promo-item {
+  display: flex;
+}
+.content .promo-section .promo-left .promo-items .promo-item .promo-icon {
+  width: 6rem;
+  height: 6rem;
+}
+.content .promo-section .promo-left .promo-items .promo-item-text {
+  margin-left: 1rem;
+}
+.content .promo-section .promo-left .promo-items .promo-item-text .promo-item-title {
+  font-family: "Playfair Display", sans-serif;
+  color: var(--black-color);
+  font-size: 2.4rem;
+  line-height: 1.25;
+  font-weight: 700;
+  margin-top: 0;
+}
+.content .promo-section .promo-left .promo-items .promo-item-text .promo-item-desc {
+  font-family: "Jost", sans-serif;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  line-height: 1.75;
+  max-width: 23rem;
+}
+.content .promo-right {
+  width: 50%;
+  position: relative;
+}
+.content .promo-right .promo-image .aboutPromo {
+  width: 100%;
+  height: 100%;
+}
+.content .promo-right .promo-content {
+  position: absolute;
+  width: 42.5rem;
+  height: 26.5rem;
+  padding: 0 5.5rem 0;
+  top: 10rem;
+  left: 0;
+}
+.content .promo-right .promo-content .promo-advertise {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #dfeee2;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 2;
+  margin: 3rem 0;
+}
+.content .promo-right .promo-content .promo-advertise-emphasis {
+  font-weight: bold;
+}
+.content .promo-right .promo-content .promo-title {
+  margin: 3rem 0;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 4.6rem;
+  color: #dfeee2;
+}
+.content .promo-right .promo-content .promo-text {
+  margin: 3rem 0;
+  font-family: "Jost", sans-serif;
+  font-size: 1.6rem;
+  color: #c0bcbc;
+  line-height: 1.75;
+}
+.content .promo-right .promo-content .promo-btn {
+  padding: 1.5rem 2rem;
+  background-color: #dfeee2;
+  border: solid 1px #dfeee2;
+  font-family: "Jost", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=about.css.map */

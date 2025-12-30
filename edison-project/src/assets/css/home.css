@@ -1,0 +1,89 @@
+.product-section {
+  display: flex;
+  justify-content: center;
+}
+.product-section .product-block {
+  width: 117rem !important;
+}
+.product-section .product-block .product-wrap .product-title-wrap {
+  margin-top: 10rem;
+}
+.product-section .product-block .product-wrap .product-title-wrap .product-title {
+  font-family: "Playfair Display", sans-serif;
+  color: #000;
+  font-size: 4.6rem;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 0;
+}
+.product-section .product-block .product-wrap .product-title-wrap .product-title-desc {
+  font-family: "Jost", sans-serif;
+  color: #333;
+  font-size: 1.8rem;
+  line-height: 1.66;
+  margin: 0;
+}
+.product-section .product-block .product-wrap .product-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-section .product-block .product-wrap .product-items .product-item a {
+  text-decoration: none;
+}
+.product-section .product-block .product-wrap .product-items .product-item a .product-item-image {
+  border-radius: 1rem;
+  box-shadow: 5px 5px 1.5rem #333;
+}
+.product-section .product-block .product-wrap .product-items .product-item a .product-item-image img {
+  width: 37rem;
+  height: 42.4rem;
+  object-fit: contain;
+}
+.product-section .product-block .product-wrap .product-items .product-item a .product-item-title {
+  transition: color 300ms ease;
+  font-family: "Playfair Display", sans-serif;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 2rem;
+}
+.product-section .product-block .product-wrap .product-items .product-item a .product-item-title:hover {
+  color: #223e3f;
+  margin: 0;
+  margin-top: 2rem;
+}
+.product-section .product-block .product-wrap .product-items .product-item a .product-item-cost {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.product-section .product-block .product-wrap .product-items .product-item a .product-item-cost .product-item-discount {
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.brand-block {
+  display: flex;
+  justify-content: center;
+}
+.brand-block .brand-wrap {
+  width: 117rem !important;
+  margin: 5rem 0;
+}
+.brand-block .brand-wrap .brand-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.brand-block .brand-wrap .brand-items .brand-item {
+  opacity: 0.5;
+  max-width: 15rem;
+}
+
+/*# sourceMappingURL=home.css.map */
