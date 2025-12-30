@@ -1,0 +1,48 @@
+body{
+    height: 100%;
+    width: 100%;
+   
+}
+.container{
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+}
+.title{
+    
+    text-align: center;
+    color: rgb(100, 100, 218);
+}
+.detail{
+   color: rgb(80, 80, 216);
+    height: 80px;
+}
+.dt-left{
+   text-align: left;
+    width: 50%;
+    float: left;
+    
+}
+.dt-right{
+   text-align: right;
+    width: 50%;
+   
+    float: right;
+}
+.timetable{
+    height: 250px;
+    text-align: center;
+    background-color: rgb(203, 136, 49);
+}
+table{
+    width: 100%;
+    height: 150px;
+    border-collapse:collapse;
+    
+}
+tr{
+    height:50px ;  
+}
+table,th,td{
+    border:1px solid black;
+}
