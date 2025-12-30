@@ -1,0 +1,25 @@
+.container {
+    width: 100vW;
+    height: 100vh;
+}
+
+.night {
+    background-color: rgb(4, 42, 76);
+    color: aliceblue;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 100px;
+    width: 200px;
+}
+
+.day {
+    background-color: aliceblue;
+
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 100px;
+    width: 200px;
+
+}
