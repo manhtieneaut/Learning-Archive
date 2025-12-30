@@ -1,0 +1,13 @@
+.materialContainer{
+    width: 100vw;
+    height: 100vh;
+   
+}
+.box{
+    border: 2px solid;
+    border-radius: 5px;
+    height:  400px;
+    width: 300px;
+
+   
+}
